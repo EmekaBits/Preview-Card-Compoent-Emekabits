@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca:wght@200;400&display=swap');
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body {
+    min-height: 100vh;
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr;
+    grid-row-gap: 0;
+    background-color: white;
+}
+
+section {
+    width: 320px;
+    height: 100%;
+    justify-self: center;
+    border-radius: 5px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 400px);
+    overflow: hidden;
+}
+
+.car-type {
+    padding: 40px;
+}
+
+.car-type img {}
+
+.car-type h1 {
+    font-family: 'Big Shoulders Display';
+    color: white;
+    font-size: 40px;
+}
+
+.car-type p {
+    font-family: 'Lexend Deca';
+    color: white;
+    margin-bottom: 40px;
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+a.learn-more {
+    border-radius: 50px;
+    background-color: white;
+    text-align: center;
+    padding:10px 20px;
+    font-family: 'Lexend Deca';
+    text-decoration: none;
+}
+
+a.learn-more:hover {
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+}
+
+.sedan>.learn-more {
+    color: hsl(31, 77%, 52%);
+}
+
+.sedan>.learn-more:hover {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suv>.learn-more {
+    color: hsl(184, 100%, 22%);
+}
+
+.suv>.learn-more:hover {
+    background-color: hsl(184, 100%, 22%);
+}
+
+
+.luxury>.learn-more {
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury>.learn-more:hover {
+    background-color: hsl(179, 100%, 13%);
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        grid-template-columns: repeat(3, 2fr);
+        grid-template-rows: auto;
+        width: 768px;
+    }
+
+    /*section {
+    width: 320px;
+    height: 100%;
+    justify-self: center;
+    border-radius: 5px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 400px);
+    overflow: hidden;
+}*/
+}
